@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST
+META.yml
+Makefile.PL
+README
+lib/Plack/Middleware/REST.pm
+t/00_compile.t
+t/10_basic.t
+t/lib/RESTApp.pm
