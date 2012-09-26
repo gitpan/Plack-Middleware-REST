@@ -12,11 +12,9 @@ my %WriteMakefileArgs = (
   "ABSTRACT" => "Route PSGI requests for RESTful web applications",
   "AUTHOR" => "Jakob Vo\303\237 <voss\@gbv.de>",
   "BUILD_REQUIRES" => {
-    "Data::Dumper" => 0,
     "HTTP::Request::Common" => 0,
     "HTTP::Status" => 0,
     "Plack::Builder" => 0,
-    "Plack::Request" => 0,
     "Plack::Test" => 0,
     "Test::More" => 0
   },
@@ -29,14 +27,16 @@ my %WriteMakefileArgs = (
   "NAME" => "Plack::Middleware::REST",
   "PREREQ_PM" => {
     "Carp" => 0,
+    "Exporter" => 0,
     "Plack::Middleware" => 0,
+    "Plack::Request" => 0,
     "Plack::Util::Accessor" => 0,
     "Scalar::Util" => 0,
     "parent" => 0,
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.01",
+  "VERSION" => "0.02",
   "test" => {
     "TESTS" => "t/*.t"
   }

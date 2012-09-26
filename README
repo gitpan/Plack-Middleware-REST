@@ -1,7 +1,7 @@
 
 
 This archive contains the distribution Plack-Middleware-REST,
-version 0.01:
+version 0.02:
 
   Route PSGI requests for RESTful web applications
 
