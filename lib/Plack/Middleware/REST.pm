@@ -1,6 +1,6 @@
 package Plack::Middleware::REST;
 {
-  $Plack::Middleware::REST::VERSION = '0.02';
+  $Plack::Middleware::REST::VERSION = '0.03';
 }
 #ABSTRACT: Route PSGI requests for RESTful web applications
 use strict;
@@ -69,9 +69,11 @@ sub call {
 
 1;
 
-
 __END__
+
 =pod
+
+=encoding UTF-8
 
 =head1 NAME
 
@@ -79,7 +81,7 @@ Plack::Middleware::REST - Route PSGI requests for RESTful web applications
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 
@@ -144,8 +146,6 @@ a list of possible request types in the C<Accept> header, or the request is
 passed to the underlying application in the middleware stack, if option
 C<pass_through> is set.
 
-=encoding utf8
-
 =head1 CONFIGURATION
 
 The options C<get>, C<create>, C<upsert>, C<delete>, C<list> can be set to PSGI
@@ -173,10 +173,9 @@ Jakob Voß <voss@gbv.de>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2012 by Jakob Voß.
+This software is copyright (c) 2014 by Jakob Voß.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-

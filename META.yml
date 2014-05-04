@@ -8,10 +8,11 @@ build_requires:
   Plack::Builder: 0
   Plack::Test: 0
   Test::More: 0
+  lib: 0
 configure_requires:
   ExtUtils::MakeMaker: 6.30
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.300023, CPAN::Meta::Converter version 2.120921'
+generated_by: 'Dist::Zilla version 5.008, CPAN::Meta::Converter version 2.133380'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -31,4 +32,4 @@ resources:
   bugtracker: https://github.com/nichtich/Plack-Middleware-REST/issues
   homepage: https://github.com/nichtich/Plack-Middleware-REST
   repository: https://github.com/nichtich/Plack-Middleware-REST.git
-version: 0.02
+version: 0.03
